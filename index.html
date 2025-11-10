@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="js/jquery-3.7.1.min.js"></script>
 
-    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+
     
 </head>
 
@@ -35,7 +36,7 @@
             <div class="logo">
                 <a href="#"><img src="img/big_logo.png" alt=""></a>
             </div>
-        
+            
         
             <ul class="menu_wrap">
                 <li class="men"><a href="#">MEN</a></li>
@@ -319,41 +320,67 @@
             </div>
 
             <div class="title_wrap_6">
-                <h3>Show us how you<br> 
-                       
-                <span class="red">#</span>
-                liveinlevis</h3>
+                    <h3>Show us how you<br> 
+                        
+                    <span class="red">#</span>
+                    liveinlevis</h3>
+            </div>
+
+            </div>
+
+            <div class="swiper con_wrap_6">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/1.png" alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/2.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/3.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/4.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/5.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/6.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/7.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/8.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sns">
+                                    <a href="#"><img src="img/sns/9.png" alt=""></a>
+                                </div>
+                            </div>
+      
+                        </div>
             </div>
             
-
-            </div>
-
-            <div class="con_wrap_6">
-                <div class="sns">
-                    <a href="#"><img src="img/sns/1.png" alt=""></a>
-                    
-                </div>
-                <div class="sns">
-                    <a href="#"><img src="img/sns/2.png" alt=""></a>
-                    
-                </div>
-                <div class="sns">
-                    <a href="#"><img src="img/sns/3.png" alt=""></a>
-                    
-                </div>
-                <div class="sns">
-                    <a href="#"><img src="img/sns/4.png" alt=""></a>
-                    
-                </div>
-                <div class="sns">
-                    <a href="#"><img src="img/sns/5.png" alt=""></a>
-                    
-                </div>
-                <div class="sns">
-                    <a href="#"><img src="img/sns/6.png" alt=""></a>
-                    
-                </div>
-            </div>
 
         </section>
         <!-- sec_6 end -->
@@ -443,35 +470,8 @@
     </div>
 
 
-    <script>
-    $('#heart').click(function() {
-      const $this = $(this);
-      const isFilled = $this.hasClass('filled');
-
-      if (isFilled) {
-        // 빈 하트로 변경
-        $this.html(`
-        <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19.19 28.812L19 28.9973L18.791 28.812C9.766 20.8262 3.8 15.5455 3.8 10.1907C3.8 6.48501 6.65 3.70572 10.45 3.70572C13.376 3.70572 16.226 5.55858 17.233 8.07847H20.767C21.774 5.55858 24.624 3.70572 27.55 3.70572C31.35 3.70572 34.2 6.48501 34.2 10.1907C34.2 15.5455 28.234 20.8262 19.19 28.812ZM27.55 0C24.244 0 21.071 1.50082 19 3.85395C16.929 1.50082 13.756 0 10.45 0C4.598 0 0 4.4654 0 10.1907C0 17.176 6.46 22.9014 16.245 31.5542L19 34L21.755 31.5542C31.54 22.9014 38 17.176 38 10.1907C38 4.4654 33.402 0 27.55 0Z" fill="#9F2B2C"/>
-        </svg>
-
-
-
-
-        `);
-        $this.removeClass('filled');
-      } else {
-        // 꽉 찬 하트로 변경
-        $this.html(`
-        <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 34L16.245 31.5542C6.46 22.9014 0 17.176 0 10.1907C0 4.4654 4.598 0 10.45 0C13.756 0 16.929 1.50082 19 3.85395C21.071 1.50082 24.244 0 27.55 0C33.402 0 38 4.4654 38 10.1907C38 17.176 31.54 22.9014 21.755 31.5542L19 34Z" fill="#9F2B2C"/>
-        </svg>
-
-        `);
-        $this.addClass('filled');
-      }
-    });
-  </script>
+   
+    
 
 
 </body>

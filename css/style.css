@@ -40,6 +40,7 @@ header {
   color: #cdcdcd;
   font-size: 18px;
 }
+
 .side_menu {
   width: 113px;
   display: flex;
@@ -374,9 +375,9 @@ video {
   display: flex;
   justify-content: space-between;
 }
-.sns img {
-  width: 291px;
-}
+/* .sns img {
+  width: 100%;
+} */
 
 /* sec_6 end */
 
