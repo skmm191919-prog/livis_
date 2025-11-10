@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+        .heart {
+            font-size: 50px;
+            cursor: pointer;
+            color: #9F2B2C;
+            transition: color 0.2s ease;
+            user-select: none;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+        .heart.active {
+            color: #9F2B2C;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <span id="heart" class="heart">♡</span>
+
+    <script>
+    const heart = document.getElementById('heart');
+    heart.addEventListener('click', () => {
+        heart.classList.toggle('active');
+        heart.textContent = heart.classList.contains('active') ? '♥' : '♡';
+    });
+    </script>
+</body>
+</html>
